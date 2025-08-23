@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahogany &#39;n&#39; Mango Web Design Website</title>
+  </head>
+  <body>
+    <div id="root">
+    <script type="module" src="/src/main.tsx"></script>
+    <form name="project-inquiry" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <select name="budget">
+        <option value="$5,000 - The Seedling">$5,000 - The Seedling</option>
+        <option value="$7,500 - The Flourish">$7,500 - The Flourish</option>
+        <option value="$10,000 - The Evergreen">$10,000 - The Evergreen</option>
+        <option value="$15,000 - The Mango Magic">$15,000 - The Mango Magic</option>
+        <option value="Custom">I need a custom quote</option>
+      </select>
+      <select name="timeline">
+        <option value="1-2 months">1-2 months</option>
+        <option value="3-4 months">3-4 months</option>
+        <option value="5-6 months">5-6 months</option>
+        <option value="6+ months">6+ months</option>
+      </select>
+      <textarea name="message"></textarea>
+      <input type="hidden" name="form-name" value="project-inquiry" />
+      <input type="text" name="bot-field" />
+    </form>
+  </div>
+  </body>
+</html>

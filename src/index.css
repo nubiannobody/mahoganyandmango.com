@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Maharlika';
+    src: url('/fonts/Maharlika.woff2') format('woff2'),
+         url('/fonts/Maharlika.woff') format('woff'),
+         url('/fonts/Maharlika.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
