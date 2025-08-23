@@ -35,27 +35,27 @@ const IndustryCard: React.FC<{ industry: IndustryData }> = ({ industry }) => {
 const Industries: React.FC = () => {
   const industries: IndustryData[] = [
     {
-      image: "src/images/innerSpace.png",
+      image: "/images/innerSpace.png",
       link: "https://theinnerspace.netlify.app"
     },
     {
-      image: "src/images/savory.png",
+      image: "/images/savory.png",
       link: "https://thesavory.netlify.app"
     },
     {
-      image: "src/images/lumina.png",
+      image: "/images/lumina.png",
       link: "https://thelumina.netlify.app"
     },
     {
-      image: "src/images/aperture.png",
+      image: "/images/aperture.png",
       link: "https://theaperture.netlify.app"
     },
     {
-      image: "src/images/eduCoach.png",
+      image: "/images/eduCoach.png",
       link: "https://theeducoach.netlify.app"
     },
     {
-      image: "src/images/brightHope.png",
+      image: "/images/brightHope.png",
       link: "https://thebrighthope.netlify.app"
     }
   ];
