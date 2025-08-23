@@ -6,7 +6,6 @@ interface TestimonialData {
   name: string;
   role: string;
   company: string;
-  image: string;
   quote: string;
   rating: number;
 }
@@ -18,9 +17,8 @@ const Testimonials: React.FC = () => {
     {
       id: 1,
       name: "Jasmine Wilson",
-      role: "Founder",
+      role: "CEO",
       company: "Melanin Beauty Supply",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       quote: "Mahogany 'n' Mango transformed our online presence completely! The team truly understood our vision and created a website that perfectly represents our brand and has increased our sales by 40%.",
       rating: 5
     },
@@ -29,17 +27,39 @@ const Testimonials: React.FC = () => {
       name: "Marcus Johnson",
       role: "CEO",
       company: "Urban Fitness Co.",
-      image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       quote: "Working with Mahogany 'n' Mango was the best decision we made for our business. They delivered a stunning, functional website that has helped us grow our client base significantly.",
       rating: 5
     },
     {
       id: 3,
       name: "Tiana Brooks",
-      role: "Director",
+      role: "CEO",
       company: "Creative Minds Academy",
-      image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       quote: "The team at Mahogany 'n' Mango went above and beyond our expectations. They created a beautiful, user-friendly website that perfectly captures our mission and has received countless compliments.",
+      rating: 5
+    },
+    {
+      id: 4,
+      name: "Alesha Bouie",
+      role: "CEO",
+      company: "Ghetto Greenhouse Teas",
+      quote: "Mahogany 'n' Mango sold out my products during the prelaunch thanks to their meticulous attention to detail and expertly optimized strategy.",
+      rating: 5
+    },
+    {
+      id: 5,
+      name: "Le'Krisha Lee",
+      role: "CEO",
+      company: "Dream Killer Planners.",
+      quote: "The team at Mahogany 'n' Mango delivered unmatched speed, accuracy, and attention to detail. They exceeded my expectations, and their constant communication kept me completely at ease.",
+      rating: 5
+    },
+    {
+      id: 6,
+      name: "Jake Myles",
+      role: "CEO",
+      company: "Jake Myles Photography",
+      quote: "Mahogany 'n' Mango brought my vision to life in a fun, approachable, and seamless way. Even though I wasn’t sure what I wanted or needed, they guided me through the process effortlessly, and my business growth has doubled month over month.",
       rating: 5
     }
   ];
@@ -65,33 +85,20 @@ const Testimonials: React.FC = () => {
         </div>
         
         <div className="max-w-4xl mx-auto relative">
-          <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-1/3 mb-6 md:mb-0">
-                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto border-4 border-amber-100">
-                  <img 
-                    src={testimonials[activeIndex].image} 
-                    alt={testimonials[activeIndex].name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="md:w-2/3 md:pl-8">
-                <div className="flex mb-4">
-                  {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-amber-400 fill-amber-400" />
-                  ))}
-                </div>
-                <blockquote className="text-lg md:text-xl italic text-amber-800 mb-6">
-                  "{testimonials[activeIndex].quote}"
-                </blockquote>
-                <div>
-                  <p className="font-bold text-amber-950">{testimonials[activeIndex].name}</p>
-                  <p className="text-amber-600">
-                    {testimonials[activeIndex].role}, {testimonials[activeIndex].company}
-                  </p>
-                </div>
-              </div>
+          <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg text-center">
+            <div className="flex justify-center mb-4">
+              {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
+                <Star key={i} className="h-5 w-5 text-amber-400 fill-amber-400" />
+              ))}
+            </div>
+            <blockquote className="text-lg md:text-xl italic text-amber-800 mb-6">
+              "{testimonials[activeIndex].quote}"
+            </blockquote>
+            <div>
+              <p className="font-bold text-amber-950">{testimonials[activeIndex].name}</p>
+              <p className="text-amber-600">
+                {testimonials[activeIndex].role}, {testimonials[activeIndex].company}
+              </p>
             </div>
           </div>
           
