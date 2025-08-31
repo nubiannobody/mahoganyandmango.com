@@ -83,7 +83,7 @@ const Header: React.FC = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full py-4">
-          <div className="container mx-auto px-4 flex flex-col space-y-4">
+          <div className="container mx-auto px-4 flex flex-col items-center space-y-4">
             {navItems.map(item => (
               <button
                 key={item}
