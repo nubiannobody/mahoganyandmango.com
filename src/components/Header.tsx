@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          {['Home', 'About', 'Packages', 'Process', 'Testimonials', 'Contact'].map((item) => (
+          {['Home', 'About', 'Packages', 'Process', 'Testimonials', 'Contact', 'All Websites'].map((item) => (
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`}
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full py-4">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
-            {['Home', 'About', 'Packages', 'Process', 'Testimonials', 'Contact'].map((item) => (
+            {['Home', 'About', 'Packages', 'Process', 'Testimonials', 'Contact', 'All Websites'].map((item) => (
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}

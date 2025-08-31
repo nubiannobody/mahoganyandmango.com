@@ -78,6 +78,17 @@ const Industries: React.FC = () => {
           ))}
         </div>
       </div>
+      <div className="mt-16 text-center">
+      <a 
+  href="/all-websites" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="inline-flex items-center bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300"
+>
+  View More
+</a>
+
+</div>
     </section>
   );
 };
