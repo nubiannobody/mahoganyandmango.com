@@ -1,22 +1,37 @@
 import React from 'react';
 import { Heart, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="bg-amber-950 text-amber-100 py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center mb-4">
+            {/* Logo */}
+            <div
+              className="flex items-center mb-4 cursor-pointer"
+              onClick={() => {
+                if (window.location.pathname !== '/') {
+                  navigate('/'); // go home if not already on homepage
+                } else {
+                  window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll to top if already home
+                }
+              }}
+            >
               <Heart className="h-6 w-6 text-amber-500 mr-2" />
               <span className="font-maharlika text-xl text-white">Mahogany 'n' Mango</span>
             </div>
+
             <p className="mb-6">
               ✨Black woman owned, led & envisioned.✨
             </p>
             <p className="italic text-amber-300 mb-6">
               "God is within her, she will not fall." - Psalms 46:5
             </p>
+
             <div className="flex space-x-4">
               <a href="#" className="text-amber-300 hover:text-white transition-colors duration-300">
                 <Instagram size={20} />
@@ -32,7 +47,7 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="font-bold text-white mb-4">Services</h3>
             <ul className="space-y-2">
@@ -45,7 +60,7 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -62,7 +77,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-amber-900 text-center text-amber-400">
           <p>&copy; {new Date().getFullYear()} Mahogany 'n' Mango Web Design. All rights reserved.</p>
         </div>
@@ -72,3 +87,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+    
