@@ -238,7 +238,7 @@ return (
           <div>
             <div className="bg-amber-50 p-8 rounded-xl mb-8">
               <h3 className="text-2xl font-maharlika text-amber-950 mb-6">
-                ✨Book Your Creative Connection Call✨
+                ✨Step 3 Book Your Creative Connection Call✨
               </h3>
               <p className="text-amber-800 mb-6">
                 After submitting your project inquiry, schedule a free 60-minute discovery call to discuss your vision.
