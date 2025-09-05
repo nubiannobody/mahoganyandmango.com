@@ -39,7 +39,10 @@ const AllWebsites: React.FC = () => {
     { image: "/images/brightHope.png", link: "https://thebrighthope.netlify.app" },
     { image: "/images/thestridesociety.png", link: "https://thestridesociety.netlify.app" },
     { image: "/images/bubblegum-bytes.png", link: "https://bubblegum-bytes.netlify.app" },
-    { image: "/images/foreignfreedom.png", link: "https://foreignfreedom.com" }
+    { image: "/images/foreignfreedom.png", link: "https://foreignfreedom.com" },
+    { image: "/images/thewalkclb.png", link: "https://thewalkclb.com"},
+    { image: "/images/thelamblounge.png", link: "https://lamblounge.netlify.app"},
+    { image: "/images/thecodelearn.png", link: "https://thecodelearn.netlify.app"}
   ];
 
   return (
