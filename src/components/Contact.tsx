@@ -113,7 +113,7 @@ return (
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-6">
                   <div>
                   <h2 className="text-2xl font-maharlika text-amber-950 mb-6">
-                🥭Submit Project Inquiry ✨Step 2✨🥭
+                🥭Book Your Fall Fix Here ✨Step 2✨🥭
               </h2>
                     <label htmlFor="name" className="block text-amber-800 font-medium mb-2">
                       Your Name*
@@ -174,6 +174,13 @@ return (
                       className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
                     >
                       <option value="">Select a budget range</option>
+                      <option value="$150 - The Fall Fix">$150 - Fix Broken Links</option>
+                      <option value="$175 - The Fall Fix">$175 - Complete Website Audit</option>
+                      <option value="$200 - The Fall Fix">$200 - Broken Forms Fixed</option>
+                      <option value="$250 - The Fall Fix">$250 - System Connections</option>
+                      <option value="$300 - The Fall Fix">$300 - Boost Conversions</option>
+                      <option value="$600 - The Fall Fix">$600 - One-Pager Design</option>
+                      <option value="$1,200 - The Fall Fix">$1,200 - Holiday-Ready Bundle</option>
                       <option value="$5,000 - The Seedling">$5,000 - The Seedling</option>
                       <option value="$7,500 - The Flourish">$7,500 - The Flourish</option>
                       <option value="$10,000 - The Evergreen">$10,000 - The Evergreen</option>
