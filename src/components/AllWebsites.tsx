@@ -65,7 +65,7 @@ const AllWebsites: React.FC = () => {
     { name: "The Walk Club", image: "/images/thewalkclb.png", link: "https://thewalkclb.com", oneLiner: "Walk club for locals." },
     { name: "The Lamb Lounge", image: "/images/thelamblounge.png", link: "https://lamblounge.netlify.app", oneLiner: "A cozy lounge for faith and fellowship." },
     { name: "The Code Learn", image: "/images/thecodelearn.png", link: "https://thecodelearn.netlify.app", oneLiner: "Learn to code the fun and easy way." },
-    { name: "The Smart Start Studio", image: "/images/smartstartstudio", link: "https://smartstartstudio.netlify.app", oneLiner: "Smart Start Studio makes web surfing fun, enjoyable, and safe for all."}
+    { name: "The Smart Start Studio", image: "/images/smartstartstudio.png", link: "https://smartstartstudio.netlify.app", oneLiner: "Smart Start Studio makes web surfing fun, enjoyable, and safe for all."}
   
   ];
 
