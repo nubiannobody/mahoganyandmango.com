@@ -66,7 +66,8 @@ const AllWebsites: React.FC = () => {
     { name: "The Lamb Lounge", image: "/images/thelamblounge.png", link: "https://lamblounge.netlify.app", oneLiner: "A cozy lounge for faith and fellowship." },
     { name: "The Code Learn", image: "/images/thecodelearn.png", link: "https://thecodelearn.netlify.app", oneLiner: "Learn to code the fun and easy way." },
     { name: "The Smart Start Studio", image: "/images/smartstartstudio.png", link: "https://smartstartstudio.netlify.app", oneLiner: "Smart Start Studio makes web surfing fun, enjoyable, and safe for all."},
-    { name: "PhenomenalShe", image: "/images/phenomenalshe.png", link: "https://phenomenalshe.netlify.app", oneLiner: "PhenomenalShe is a community-based nonprofit organization focused on empowering young women of color through mentorship, education, and personal development."}  
+    { name: "PhenomenalShe", image: "/images/phenomenalshe.png", link: "https://phenomenalshe.netlify.app", oneLiner: "PhenomenalShe is a community-based nonprofit organization focused on empowering young women of color through mentorship, education, and personal development."},
+    { name: "The Botanica", image: "/images/botanica.png", link: "https://thebotanica.netlify.app", oneLiner: "Elegant plant palace that boasts a collection of premium plants and expert care guides to transform your space into a thriving botanical sanctuary."},  
   ];
 
   return (
