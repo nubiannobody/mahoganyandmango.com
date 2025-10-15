@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-white">
+    <section id="about" className="py-16 md:py-6 bg-white">
   <div className="text-center mb-24"> {/* consistent vertical rhythm */}
   </div>
   <div className="container mx-auto px-4">
