@@ -12,8 +12,7 @@ const About: React.FC = () => {
         About Mahogany 'n' Mango
       </h2>
           <p className="text-lg text-amber-800">
-            We create beautiful, functional websites that help businesses grow and thrive online.
-            Our designs are crafted with purpose, passion, and a deep understanding of your unique needs.
+          We build elegant, purpose-driven websites that help businesses grow and thrive online — crafted with passion, precision, and a deep understanding of your brand.
           </p>
         </div>
         

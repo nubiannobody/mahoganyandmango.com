@@ -76,7 +76,7 @@ const Industries: React.FC = () => {
             Websites We've Built
           </h2>
           <p className="text-lg text-amber-800">
-            We create beautiful, functional websites for businesses across various industries.
+          We craft stunning, functional websites that bring your brand’s vision to life.
           </p>
         </div>
         

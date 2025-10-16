@@ -70,7 +70,7 @@ const Packages: React.FC = () => {
       id: 'seedling',
       name: 'The Seedling',
       emoji: '🌱',
-      price: '$5,000',
+      price: ' Starting at $5,000',
       description: 'A solid foundation for your online presence',
       features: [
         { text: 'Custom 5-page website' },
@@ -86,7 +86,7 @@ const Packages: React.FC = () => {
       id: 'flourish',
       name: 'The Flourish',
       emoji: '🌿',
-      price: '$7,500',
+      price: 'Starting at $7,500',
       description: 'A more dynamic website to grow your brand',
       features: [
         { text: 'Everything in The Seedling, plus:' },
@@ -103,7 +103,7 @@ const Packages: React.FC = () => {
       id: 'evergreen',
       name: 'The Evergreen',
       emoji: '🌳',
-      price: '$10,000',
+      price: 'Starting at $10,000',
       description: 'A high-performing, fully customized website',
       features: [
         { text: 'Everything in The Flourish, plus:' },
@@ -127,8 +127,8 @@ const Packages: React.FC = () => {
           </h2>
           <p className="text-lg text-amber-800">
           At Mahogany & Mango, every project begins with discovery — because clarity saves time, energy, and budget.
-Rather than selling pre-boxed packages, I guide clients through structured frameworks that adapt to your goals, scale, and tech stack.
-Each framework has a typical investment range to give you transparency, but the final proposal is crafted only after scope alignment.
+          We guide clients through structured frameworks that adapt to your goals, scale, and tech stack.
+          Each framework has a typical investment range to give you transparency, but the final proposal is crafted only after scope alignment.
           </p>
         </div>
         

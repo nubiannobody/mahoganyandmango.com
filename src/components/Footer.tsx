@@ -29,21 +29,15 @@ const Footer: React.FC = () => {
               ✨Black woman owned, led & envisioned.✨
             </p>
             <p className="italic text-amber-300 mb-6">
-              "God is within her, she will not fall." - Psalms 46:5
+              "But seek first the kingdom of God and his righteousness, and all these things will be added to you" - Matthew 6:33
             </p>
 
             <div className="flex space-x-4">
-              <a href="#" className="text-amber-300 hover:text-white transition-colors duration-300">
+              <a href="https://www.instagram.com/mahoganyandmango/" className="text-amber-300 hover:text-white transition-colors duration-300">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-amber-300 hover:text-white transition-colors duration-300">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-amber-300 hover:text-white transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/kweenyoallhiada" className="text-amber-300 hover:text-white transition-colors duration-300">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-amber-300 hover:text-white transition-colors duration-300">
-                <Facebook size={20} />
               </a>
             </div>
           </div>

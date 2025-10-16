@@ -55,7 +55,7 @@ const Process: React.FC = () => {
     {
       step: 2,
       title: "Book Discovery Call",
-      description: "Schedule a free 60-minute call via Calendly to discuss your project, clarify expectations, and see if we're a good fit.",
+      description: "Schedule a free 30-minute call via Calendly to discuss your project, clarify expectations, and see if we're a good fit.",
       icon: <Calendar size={24} />,
     },
     {

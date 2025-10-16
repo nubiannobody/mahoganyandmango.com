@@ -248,7 +248,7 @@ return (
                 ✨Step 3✨ Book Your Creative Connection Call
               </h3>
               <p className="text-amber-800 mb-6">
-                After submitting your project inquiry, schedule a free 60-minute discovery call to discuss your vision.
+                After submitting your project inquiry, schedule a free 30-minute discovery call to discuss your vision.
               </p>
               <a 
                 href="https://calendly.com/mahoganyandmango-dcp9/30min" 
