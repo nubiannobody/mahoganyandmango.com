@@ -1,0 +1,57 @@
+# Query: Mahogany 'n' Mango
+# ContextLines: 1
+
+12 results - 5 files
+
+src/components/About.tsx:
+  11        <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  12:         About Mahogany & Mango
+  13        </h2>
+
+  15            We don't just build websites. We build your future.
+  16:           Mahogany & Mango crafts elegant, purpose-driven websites for businesses ready to show up online with confidence — built with passion, precision, and a deep respect for your brand's story.          </p>
+  17          </div>
+
+src/components/Footer.tsx:
+  24                <Heart className="h-6 w-6 text-amber-500 mr-2" />
+  25:               <span className="font-Cormorant Garamond text-xl text-white">Mahogany & Mango</span>
+  26              </div>
+
+  75          <div className="pt-8 border-t border-amber-900 text-center text-amber-400">
+  76:           <p>&copy; {new Date().getFullYear()} Mahogany & Mango Web Design. All rights reserved.</p>
+  77          </div>
+
+src/components/Header.tsx:
+  80            <span className="font-Cormorant Garamond text-xl md:text-2xl text-amber-950">
+  81:             Mahogany & Mango
+  82            </span>
+
+src/components/Packages.tsx:
+  125            <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  126:             Mahogany & Mango Web Design Packages
+  127            </h2>
+
+src/components/Testimonials.tsx:
+  21        company: "Melanin Beauty Supply",
+  22:       quote: "Mahogany & Mango transformed our online presence completely! The team truly understood our vision and created a website that perfectly represents our brand and has increased our sales by 40%.",
+  23        rating: 5
+
+  29        company: "Urban Fitness Co.",
+  30:       quote: "Working with Mahogany & Mango was the best decision we made for our business. They delivered a stunning, functional website that has helped us grow our client base significantly.",
+  31        rating: 5
+
+  37        company: "Creative Minds Academy",
+  38:       quote: "The team at Mahogany & Mango went above and beyond our expectations. They created a beautiful, user-friendly website that perfectly captures our mission and has received countless compliments.",
+  39        rating: 5
+
+  45        company: "Ghetto Greenhouse Teas",
+  46:       quote: "Mahogany & Mango sold out my products during the prelaunch thanks to their meticulous attention to detail and expertly optimized strategy.",
+  47        rating: 5
+
+  53        company: "Dream Killer Planners.",
+  54:       quote: "The team at Mahogany & Mango delivered unmatched speed, accuracy, and attention to detail. They exceeded my expectations, and their constant communication kept me completely at ease.",
+  55        rating: 5
+
+  61        company: "Jake Myles Photography",
+  62:       quote: "Mahogany & Mango brought my vision to life in a fun, approachable, and seamless way. Even though I wasn’t sure what I wanted or needed, they guided me through the process effortlessly, and my business growth has doubled month over month.",
+  63        rating: 5

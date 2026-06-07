@@ -19,7 +19,7 @@ const Testimonials: React.FC = () => {
       name: "Jasmine Wilson",
       role: "CEO",
       company: "Melanin Beauty Supply",
-      quote: "Mahogany 'n' Mango transformed our online presence completely! The team truly understood our vision and created a website that perfectly represents our brand and has increased our sales by 40%.",
+      quote: "Mahogany & Mango transformed our online presence completely! The team truly understood our vision and created a website that perfectly represents our brand and has increased our sales by 40%.",
       rating: 5
     },
     {
@@ -27,7 +27,7 @@ const Testimonials: React.FC = () => {
       name: "Marcus Johnson",
       role: "CEO",
       company: "Urban Fitness Co.",
-      quote: "Working with Mahogany 'n' Mango was the best decision we made for our business. They delivered a stunning, functional website that has helped us grow our client base significantly.",
+      quote: "Working with Mahogany & Mango was the best decision we made for our business. They delivered a stunning, functional website that has helped us grow our client base significantly.",
       rating: 5
     },
     {
@@ -35,7 +35,7 @@ const Testimonials: React.FC = () => {
       name: "Tiana Brooks",
       role: "CEO",
       company: "Creative Minds Academy",
-      quote: "The team at Mahogany 'n' Mango went above and beyond our expectations. They created a beautiful, user-friendly website that perfectly captures our mission and has received countless compliments.",
+      quote: "The team at Mahogany & Mango went above and beyond our expectations. They created a beautiful, user-friendly website that perfectly captures our mission and has received countless compliments.",
       rating: 5
     },
     {
@@ -43,7 +43,7 @@ const Testimonials: React.FC = () => {
       name: "Alesha Bouie",
       role: "CEO",
       company: "Ghetto Greenhouse Teas",
-      quote: "Mahogany 'n' Mango sold out my products during the prelaunch thanks to their meticulous attention to detail and expertly optimized strategy.",
+      quote: "Mahogany & Mango sold out my products during the prelaunch thanks to their meticulous attention to detail and expertly optimized strategy.",
       rating: 5
     },
     {
@@ -51,7 +51,7 @@ const Testimonials: React.FC = () => {
       name: "Le'Krisha Lee",
       role: "CEO",
       company: "Dream Killer Planners.",
-      quote: "The team at Mahogany 'n' Mango delivered unmatched speed, accuracy, and attention to detail. They exceeded my expectations, and their constant communication kept me completely at ease.",
+      quote: "The team at Mahogany & Mango delivered unmatched speed, accuracy, and attention to detail. They exceeded my expectations, and their constant communication kept me completely at ease.",
       rating: 5
     },
     {
@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
       name: "Jake Myles",
       role: "CEO",
       company: "Jake Myles Photography",
-      quote: "Mahogany 'n' Mango brought my vision to life in a fun, approachable, and seamless way. Even though I wasn’t sure what I wanted or needed, they guided me through the process effortlessly, and my business growth has doubled month over month.",
+      quote: "Mahogany & Mango brought my vision to life in a fun, approachable, and seamless way. Even though I wasn’t sure what I wanted or needed, they guided me through the process effortlessly, and my business growth has doubled month over month.",
       rating: 5
     }
   ];
@@ -76,16 +76,16 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-16 md:py-24 bg-amber-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-maharlika text-amber-950 mb-6">
+          <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
             Words from Our Clients
           </h2>
-          <p className="text-lg text-amber-800">
+          <p className="text-lg font-DM Sans' text-amber-800">
             See what businesses we've worked with have to say about our services.
           </p>
         </div>
         
         <div className="max-w-4xl mx-auto relative">
-          <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg text-center">
+          <div className="bg-[#F2E8D9] rounded-xl p-8 md:p-12 shadow-lg text-center">
             <div className="flex justify-center mb-4">
               {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
                 <Star key={i} className="h-5 w-5 text-amber-400 fill-amber-400" />
@@ -105,14 +105,14 @@ const Testimonials: React.FC = () => {
           <div className="flex justify-center mt-8 space-x-4">
             <button 
               onClick={prevTestimonial}
-              className="bg-white hover:bg-amber-100 text-amber-600 p-3 rounded-full shadow transition-colors duration-300"
+              className="bg-[#F2E8D9] hover:bg-amber-100 text-amber-600 p-3 rounded-full shadow transition-colors duration-300"
               aria-label="Previous testimonial"
             >
               <ChevronLeft size={24} />
             </button>
             <button 
               onClick={nextTestimonial}
-              className="bg-white hover:bg-amber-100 text-amber-600 p-3 rounded-full shadow transition-colors duration-300"
+              className="bg-[#F2E8D9] hover:bg-amber-100 text-amber-600 p-3 rounded-full shadow transition-colors duration-300"
               aria-label="Next testimonial"
             >
               <ChevronRight size={24} />

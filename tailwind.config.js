@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        maharlika: ['Maharlika', 'sans-serif'],
+        'Cormorant Garamond': serif, 'DM Sans': sans-serif
       },
     },
   },

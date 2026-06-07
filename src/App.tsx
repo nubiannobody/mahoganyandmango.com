@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AllWebsites from "./components/AllWebsites";
+import Consulting from "./components/Consulting";
 
 // 👇 This is your homepage content
 function Home() {
@@ -29,7 +30,7 @@ function Home() {
 
 function App() {
   useEffect(() => {
-    document.title = "Mahogany 'n' Mango Web Design";
+    document.title = "Mahogany & Mango Web Design";
   }, []);
 
   return (
@@ -40,9 +41,9 @@ function App() {
           <Routes>
             {/* Homepage */}
             <Route path="/" element={<Home />} />
-
             {/* All Websites page */}
             <Route path="/all-websites" element={<AllWebsites />} />
+            <Route path="/consulting" element={<Consulting />} />
           </Routes>
         </main>
         <Footer />
@@ -52,3 +53,4 @@ function App() {
 }
 
 export default App;
+ 

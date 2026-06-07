@@ -3,7 +3,7 @@ import { Heart } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-b from-amber-50 to-white">
+    <section id="home" className="pt-24 md:pt-32 pb-16 md:pb-24 bg-[#F5EFE6]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
@@ -36,20 +36,20 @@ const Hero: React.FC = () => {
           </div>
           <div className="md:w-1/2">
             <div className="relative">
-              <div className="w-full h-[400px] md:h-[500px] rounded-xl bg-amber-200 overflow-hidden shadow-xl">
+            <div className="w-full max-w-7xl mx-auto h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-xl bg-amber-200 overflow-hidden shadow-xl">
                 <img 
-                  src="https://images.pexels.com/photos/5475755/pexels-photo-5475755.jpeg" 
-                  alt="Black woman designer working on a website" 
+                  src="public/images/furKween.jpg" 
+                  alt="The stunning CEO staring and smiling beautifully in a brown cow print fur with senegalese twists" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-6 -right-6 bg-[#F2E8D9] p-4 rounded-lg shadow-lg">
                 <div className="flex items-center gap-4">
                   <div className="bg-amber-100 h-12 w-12 rounded-full flex items-center justify-center">
                     <Heart className="h-6 w-6 text-amber-600" />
                   </div>
                   <div>
-                    <p className="font-bold text-amber-950">Beautiful Design</p>
+                    <p className="font-bold text-amber-950">Beautiful Designs</p>
                     <p className="text-amber-800">For Your Business</p>
                   </div>
                 </div>

@@ -20,7 +20,7 @@ const ProcessStep: React.FC<{
         className={`border-2 rounded-xl p-6 h-full ${
           isActive 
             ? 'border-amber-600 bg-amber-50 shadow-md' 
-            : 'border-amber-200 bg-white hover:border-amber-300'
+            : 'border-amber-200 bg-[#F2E8D9] hover:border-amber-300'
         }`}
       >
         <div className="flex items-center mb-4">
@@ -31,7 +31,7 @@ const ProcessStep: React.FC<{
           >
             <span className="font-bold">{step}</span>
           </div>
-          <h3 className="text-xl font-maharlika text-amber-950">{title}</h3>
+          <h3 className="text-xl font-Cormorant Garamond text-amber-950">{title}</h3>
         </div>
         <p className="text-amber-800 mb-4">{description}</p>
         <div className={`text-amber-600 ${isActive ? 'opacity-100' : 'opacity-70'}`}>
@@ -79,15 +79,14 @@ const Process: React.FC = () => {
   ];
 
   return (
-    <section id="process" className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50">
+    <section id="process" className="py-16 md:py-24 bg-[#F5EFE6]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-maharlika text-amber-950 mb-6">
+          <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
             ✨The Process✨
           </h2>
           <p className="text-lg text-amber-800">
-            Our streamlined approach ensures a smooth, collaborative experience from concept to launch.
-          </p>
+          From your first inquiry to your launch day celebration — here's how we make it happen together.          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">

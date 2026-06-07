@@ -22,13 +22,13 @@ const Footer: React.FC = () => {
               }}
             >
               <Heart className="h-6 w-6 text-amber-500 mr-2" />
-              <span className="font-maharlika text-xl text-white">Mahogany 'n' Mango</span>
+              <span className="font-Cormorant Garamond text-xl text-white">Mahogany & Mango</span>
             </div>
 
             <p className="mb-6">
               ✨Black woman owned, led & envisioned.✨
             </p>
-            <p className="italic text-amber-300 mb-6">
+            <p className="italic font-DM Sans' text-amber-300 mb-6">
               "But seek first the kingdom of God and his righteousness, and all these things will be added to you" - Matthew 6:33
             </p>
 
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-amber-900 text-center text-amber-400">
-          <p>&copy; {new Date().getFullYear()} Mahogany 'n' Mango Web Design. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mahogany & Mango Web Design. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -69,15 +69,14 @@ const Industries: React.FC = () => {
   ];
 
   return (
-    <section id="industries" className="py-16 md:py-24 bg-white">
+    <section id="industries" className="py-16 md:py-24 bg-[#F5EFE6]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-maharlika text-amber-950 mb-6">
-            Websites We've Built
+          <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+            Websites Built
           </h2>
           <p className="text-lg text-amber-800">
-          We craft stunning, functional websites that bring your brand’s vision to life.
-          </p>
+          Every site tells a story. Here are some of the brands we've had the honor of bringing to life.          </p>
         </div>
         
         {/* Industry Grid */}

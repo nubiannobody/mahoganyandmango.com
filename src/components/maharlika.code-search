@@ -1,0 +1,58 @@
+# Query: maharlika
+# ContextLines: 1
+
+11 results - 10 files
+
+src/components/About.tsx:
+  10      <div className="text-center max-w-3xl mx-auto mb-16">
+  11:       <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  12          About Mahogany 'n' Mango
+
+src/components/AllWebsites.tsx:
+  76          <div className="text-center max-w-3xl mx-auto mb-16">
+  77:           <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  78              All Websites
+
+src/components/Consulting.tsx:
+  78          <div className="text-center max-w-3xl mx-auto mb-16">
+  79:           <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  80              Consulting & Digital Solutions
+
+src/components/FallFix.tsx:
+  7          <div className="text-center max-w-3xl mx-auto mb-16">
+  8:           <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  9              Book Your Fall Fix Via Contact Form
+
+src/components/Footer.tsx:
+  24                <Heart className="h-6 w-6 text-amber-500 mr-2" />
+  25:               <span className="font-Cormorant Garamond text-xl text-white">Mahogany 'n' Mango</span>
+  26              </div>
+
+src/components/Header.tsx:
+  79            <Heart className="h-8 w-8 text-amber-600 mr-2" />
+  80:           <span className="font-Cormorant Garamond text-xl md:text-2xl text-amber-950">
+  81              Mahogany 'n' Mango
+
+src/components/Industries.tsx:
+  74          <div className="text-center max-w-3xl mx-auto mb-16">
+  75:           <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  76              Websites We've Built
+
+src/components/Packages.tsx:
+  124          <div className="text-center max-w-3xl mx-auto mb-16">
+  125:           <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  126              Mahogany 'n' Mango Web Design Packages
+
+src/components/Process.tsx:
+  33            </div>
+  34:           <h3 className="text-xl font-Cormorant Garamond text-amber-950">{title}</h3>
+  35          </div>
+
+  84          <div className="text-center max-w-3xl mx-auto mb-16">
+  85:           <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  86              ✨The Process✨
+
+src/components/Testimonials.tsx:
+  78          <div className="text-center max-w-3xl mx-auto mb-16">
+  79:           <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+  80              Words from Our Clients

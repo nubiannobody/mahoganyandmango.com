@@ -24,8 +24,8 @@ const PackageCard: React.FC<{
     <div 
       className={`relative border-2 rounded-xl p-8 transition-all duration-300 transform ${
         isActive 
-          ? 'scale-105 border-amber-600 bg-white shadow-xl z-10' 
-          : 'border-amber-200 bg-white hover:border-amber-300 hover:shadow-lg'
+          ? 'scale-105 border-amber-600 bg-[#F5EFE6] shadow-xl z-10' 
+          : 'border-amber-200 bg-[#F2E8D9] hover:border-amber-300 hover:shadow-lg'
       }`}
     >
       {pkg.popular && (
@@ -119,17 +119,14 @@ const Packages: React.FC = () => {
   ];
 
   return (
-    <section id="packages" className="py-16 md:py-24 bg-white">
+    <section id="packages" className="py-16 md:py-24 bg-[#F5EFE6]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-maharlika text-amber-950 mb-6">
-            Mahogany 'n' Mango Web Design Packages
+          <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+            Mahogany & Mango Web Design Packages
           </h2>
           <p className="text-lg text-amber-800">
-          At Mahogany & Mango, every project begins with discovery — because clarity saves time, energy, and budget.
-          We guide clients through structured frameworks that adapt to your goals, scale, and tech stack.
-          Each framework has a typical investment range to give you transparency, but the final proposal is crafted only after scope alignment.
-          </p>
+          Every project starts with discovery — because clarity is the foundation of everything great. We guide you through a structured process tailored to your goals, your brand, and your budget. Pricing below reflects starting investment ranges; your final proposal is built around your specific scope.          </p>
         </div>
         
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -144,7 +141,7 @@ const Packages: React.FC = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <p className="text-amber-800 mb-6">
+          <p className="text-lg font-DM Sans' text-amber-800 mb-6">
             Not sure which package is right for you? Let's discuss your specific needs.
           </p>
           <a 

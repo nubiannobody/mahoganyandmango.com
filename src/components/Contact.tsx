@@ -56,10 +56,10 @@ const Contact: React.FC = () => {
 };
  
 return (
-  <section id="contact" className="py-16 md:py-24 bg-gradient-to-b from-amber-50 to-white">
+  <section id="contact" className="py-16 md:py-24 bg-[#F5EFE6]">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl md:text-4xl font-maharlika text-amber-950 mb-6">
+        <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
           ✨Client Intake Form✨
         </h2>
         <p className="text-lg text-amber-800">
@@ -80,7 +80,7 @@ return (
         data-netlify="true"
         netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-xl shadow-lg"
+        className="bg-[#F2E8D9] p-8 rounded-xl shadow-lg"
       >
         <input type="hidden" name="form-name" value="project-inquiry" />
         <div hidden>
@@ -112,8 +112,8 @@ return (
               <>
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-6">
                   <div>
-                  <h2 className="text-2xl font-maharlika text-amber-950 mb-6">
-                🥭Book Your Fall Fix Here ✨Step 2✨🥭
+                  <h2 className="text-2xl font-Cormorant Garamond text-amber-950 mb-6">
+                🥭Let's Work! ✨Step 2✨🥭
               </h2>
                     <label htmlFor="name" className="block text-amber-800 font-medium mb-2">
                       Your Name*
@@ -125,7 +125,7 @@ return (
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
+                      className="bg-[#F5EFE6] w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
                       placeholder="Jane Doe"
                     />
                   </div>
@@ -140,7 +140,7 @@ return (
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
+                      className="bg-[#F5EFE6] w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
                       placeholder="jane@example.com"
                     />
                   </div>
@@ -157,7 +157,7 @@ return (
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
+                      className="bg-[#F5EFE6] w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
                       placeholder="(123) 456-7890"
                     />
                   </div>
@@ -171,7 +171,7 @@ return (
                       required
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
+                      className="bg-[#F5EFE6] w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
                     >
                       <option value="">Select a budget range</option>
                       <option value="$150 - The Fall Fix">$150 - Fix Broken Links</option>
@@ -200,7 +200,7 @@ return (
                     required
                     value={formData.timeline}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
+                    className="bg-[#F5EFE6] w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
                   >
                     <option value="">When do you need your website?</option>
                     <option value="1-2 months">1-2 months</option>
@@ -221,7 +221,7 @@ return (
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
+                    className="bg-[#F5EFE6] w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
                     placeholder="Share your website goals, needs, and vision..."
                   ></textarea>
                 </div>
@@ -244,7 +244,7 @@ return (
 
           <div>
             <div className="bg-amber-50 p-8 rounded-xl mb-8">
-              <h3 className="text-2xl font-maharlika text-amber-950 mb-6">
+              <h3 className="text-2xl font-Cormorant Garamond text-amber-950 mb-6">
                 ✨Step 3✨ Book Your Creative Connection Call
               </h3>
               <p className="text-amber-800 mb-6">
@@ -254,7 +254,7 @@ return (
                 href="https://calendly.com/mahoganyandmango-dcp9/30min" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-white hover:bg-amber-100 text-amber-600 font-medium py-3 px-6 rounded-full border border-amber-200 transition-colors duration-300"
+                className="inline-flex items-center bg-[#F5EFE6] hover:bg-amber-100 text-amber-600 font-medium py-3 px-6 rounded-full border border-amber-200 transition-colors duration-300"
               >
                 <Calendar size={18} className="mr-2" />
                 Schedule on Calendly
