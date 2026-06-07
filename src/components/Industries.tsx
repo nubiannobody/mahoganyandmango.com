@@ -63,7 +63,7 @@ const Industries: React.FC = () => {
     { name: "The Stride Society", image: "/images/thestridesociety.png", link: "https://thestridesociety.netlify.app", oneLiner: "Community that moves forward together." },
     { name: "Bubblegum Bytes", image: "/images/bubblegum-bytes.png", link: "https://bubblegum-bytes.netlify.app", oneLiner: "Digital diary." },
     { name: "Foreign Freedom", image: "/images/foreignfreedom.png", link: "https://foreignfreedom.com", oneLiner: "Life coaching and motivational speaking." },
-    { name: "Aperture", image: "/images/aperture.png", link: "https://theaperture.netlify.app", oneLiner: "A portfolio for photography and visuals." },
+    { name: "Denkyem Denizens", image: "/images/DenkyemDenizens.png", link: "https://portfolio.denkyemcoop.com/", oneLiner: "A portfolio of our community with capital that moves with your business, not against it." },
     { name: "EduCoach", image: "/images/eduCoach.png", link: "https://theeducoach.netlify.app", oneLiner: "Online education platform for lifelong learners." },
     { name: "BrightHope", image: "/images/brightHope.png", link: "https://thebrighthope.netlify.app", oneLiner: "Bringing hope through nonprofit design." }
   ];
