@@ -27,7 +27,7 @@ const IndustryCard: React.FC<{ industry: IndustryData }> = ({ industry }) => {
       <img
         src={industry.image}
         alt={industry.name}
-        className="w-full h-64 object-contain transition-transform duration-500 group-hover:scale-110 bg-white"
+        className="w-full h-64 object-contain transition-transform duration-500 group-hover:scale-110 bg-[#F2E8D9]"
       />
 
       {/* Title + One-liner caption */}
@@ -61,9 +61,9 @@ const IndustryCard: React.FC<{ industry: IndustryData }> = ({ industry }) => {
 const Industries: React.FC = () => {
   const industries: IndustryData[] = [
     { name: "The Stride Society", image: "/images/thestridesociety.png", link: "https://thestridesociety.netlify.app", oneLiner: "Community that moves forward together." },
-    { name: "Bubblegum Bytes", image: "/images/bubblegum-bytes.png", link: "https://bubblegum-bytes.netlify.app", oneLiner: "Digital diary." },
-    { name: "Foreign Freedom", image: "/images/foreignfreedom.png", link: "https://foreignfreedom.com", oneLiner: "Life coaching and motivational speaking." },
     { name: "Denkyem Denizens", image: "/images/DenkyemDenizens.png", link: "https://portfolio.denkyemcoop.com/", oneLiner: "A portfolio of our community with capital that moves with your business, not against it." },
+    { name: "Foreign Freedom", image: "/images/foreignfreedom.png", link: "https://foreignfreedom.com", oneLiner: "Life coaching and motivational speaking." },
+    { name: "Bubblegum Bytes", image: "/images/bubblegum-bytes.png", link: "https://bubblegum-bytes.netlify.app", oneLiner: "Digital diary." },
     { name: "EduCoach", image: "/images/eduCoach.png", link: "https://theeducoach.netlify.app", oneLiner: "Online education platform for lifelong learners." },
     { name: "BrightHope", image: "/images/brightHope.png", link: "https://thebrighthope.netlify.app", oneLiner: "Bringing hope through nonprofit design." }
   ];
@@ -76,7 +76,7 @@ const Industries: React.FC = () => {
             Websites Built
           </h2>
           <p className="text-lg text-amber-800">
-          Every site tells a story. Here are some of the brands we've had the honor of bringing to life.          </p>
+          Every site tells a story. Here are some of the brands we've had the honor of bringing to life.</p>
         </div>
         
         {/* Industry Grid */}
