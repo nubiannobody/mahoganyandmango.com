@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'Cormorant Garamond': serif, 'DM Sans': sans-serif
+        cormorant: ['"Cormorant Garamond"', 'serif'],
+        sans: ['"DM Sans"', 'sans-serif'],
       },
     },
   },

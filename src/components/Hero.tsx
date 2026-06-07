@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             <div className="relative">
             <div className="w-full max-w-7xl mx-auto h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-xl bg-amber-200 overflow-hidden shadow-xl">
                 <img 
-                  src="public/images/furKween.jpg" 
+                  src="public/furKween.jpg" 
                   alt="The stunning CEO staring and smiling beautifully in a brown cow print fur with senegalese twists" 
                   className="w-full h-full object-cover"
                 />
