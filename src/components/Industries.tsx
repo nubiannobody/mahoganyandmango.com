@@ -71,12 +71,26 @@ const Industries: React.FC = () => {
   return (
     <section id="industries" className="py-16 md:py-24 bg-[#F5EFE6]">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
+           {/* Heading with blob */}
+           <div className="relative">
+          <svg
+            className="absolute top-[-100%] left-[-40%] w-[180%] h-[400%] opacity-20 pointer-events-none z-0"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#fbbf24"
+              d="M100,20 C115,5 135,10 140,30 C158,25 170,40 160,55 C178,60 180,78 165,85 C175,100 168,118 152,118 C155,138 140,150 125,142 C120,160 103,165 95,150 C80,162 63,155 62,138 C45,145 30,132 35,115 C18,108 15,90 30,82 C18,68 22,50 38,47 C30,30 45,18 60,25 C68,8 88,8 100,20Z"
+            />
+          </svg>
+
+          <div className="relative z-10 text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-amber-950 mb-6">
             Websites Built
           </h2>
           <p className="text-lg text-amber-800">
           Every site tells a story. Here are some of the brands we've had the honor of bringing to life.</p>
+        </div>
         </div>
         
         {/* Industry Grid */}

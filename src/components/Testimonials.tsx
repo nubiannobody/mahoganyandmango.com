@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
       name: "Jake Myles",
       role: "CEO",
       company: "Jake Myles Photography",
-      quote: "Mahogany & Mango brought my vision to life in a fun, approachable, and seamless way. Even though I wasn’t sure what I wanted or needed, they guided me through the process effortlessly, and my business growth has doubled month over month.",
+      quote: "Mahogany & Mango brought my vision to life in a fun, approachable, and seamless way. Even though I wasn't sure what I wanted or needed, they guided me through the process effortlessly, and my business growth has doubled month over month.",
       rating: 5
     }
   ];
@@ -75,15 +75,31 @@ const Testimonials: React.FC = () => {
   return (
     <section id="testimonials" className="py-16 md:py-24 bg-amber-50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
-            Words from Our Clients
-          </h2>
-          <p className="text-lg font-DM Sans' text-amber-800">
-            See what businesses we've worked with have to say about our services.
-          </p>
+
+        {/* Heading with blob */}
+        <div className="relative">
+          <svg
+            className="absolute top-[-100%] left-[-40%] w-[180%] h-[400%] opacity-20 pointer-events-none z-0"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#b45309"
+              d="M100,20 C115,5 135,10 140,30 C158,25 170,40 160,55 C178,60 180,78 165,85 C175,100 168,118 152,118 C155,138 140,150 125,142 C120,160 103,165 95,150 C80,162 63,155 62,138 C45,145 30,132 35,115 C18,108 15,90 30,82 C18,68 22,50 38,47 C30,30 45,18 60,25 C68,8 88,8 100,20Z"
+            />
+          </svg>
+
+          <div className="relative z-10 text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-amber-950 mb-6">
+              Words from Our Clients
+            </h2>
+            <p className="text-lg text-amber-800">
+              See what businesses we've worked with have to say about our services.
+            </p>
+          </div>
         </div>
-        
+
+        {/* Carousel */}
         <div className="max-w-4xl mx-auto relative">
           <div className="bg-[#F2E8D9] rounded-xl p-8 md:p-12 shadow-lg text-center">
             <div className="flex justify-center mb-4">
@@ -132,6 +148,7 @@ const Testimonials: React.FC = () => {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );

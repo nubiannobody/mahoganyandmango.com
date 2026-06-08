@@ -31,7 +31,7 @@ const ProcessStep: React.FC<{
           >
             <span className="font-bold">{step}</span>
           </div>
-          <h3 className="text-xl font-Cormorant Garamond text-amber-950">{title}</h3>
+          <h3 className="text-xl font-bold text-amber-950">{title}</h3>
         </div>
         <p className="text-amber-800 mb-4">{description}</p>
         <div className={`text-amber-600 ${isActive ? 'opacity-100' : 'opacity-70'}`}>
@@ -81,14 +81,31 @@ const Process: React.FC = () => {
   return (
     <section id="process" className="py-16 md:py-24 bg-[#F5EFE6]">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-Cormorant Garamond text-amber-950 mb-6">
-            ✨The Process✨
-          </h2>
-          <p className="text-lg text-amber-800">
-          From your first inquiry to your launch day celebration — here's how we make it happen together.          </p>
+
+        {/* Heading with blob */}
+        <div className="relative">
+          <svg
+            className="absolute top-[-100%] left-[-40%] w-[180%] h-[400%] opacity-30 pointer-events-none z-0"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#b45309"
+              d="M100,20 C115,5 135,10 140,30 C158,25 170,40 160,55 C178,60 180,78 165,85 C175,100 168,118 152,118 C155,138 140,150 125,142 C120,160 103,165 95,150 C80,162 63,155 62,138 C45,145 30,132 35,115 C18,108 15,90 30,82 C18,68 22,50 38,47 C30,30 45,18 60,25 C68,8 88,8 100,20Z"
+            />
+          </svg>
+
+          <div className="relative z-10 text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-amber-950 mb-6">
+              ✨The Process✨
+            </h2>
+            <p className="text-lg text-amber-800">
+              From your first inquiry to your launch day celebration — here's how we make it happen together.
+            </p>
+          </div>
         </div>
-        
+
+        {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {steps.map((step) => (
             <ProcessStep 
@@ -109,6 +126,7 @@ const Process: React.FC = () => {
             Submit Your Project Inquiry
           </a>
         </div>
+
       </div>
     </section>
   );
