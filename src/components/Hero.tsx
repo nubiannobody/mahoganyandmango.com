@@ -9,10 +9,11 @@ const Hero: React.FC = () => {
 
           {/* LEFT SPLAT — behind heading & buttons */}
           <svg
-            className="absolute top-0 left-[-40%] w-[120%] h-[120%] opacity-30 pointer-events-none z-0"
-            viewBox="0 0 200 200"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+  className="absolute top-0 left-[-10%] w-[100%] h-[50%] md:left-[-40%] md:w-[120%] md:h-[120%] opacity-30 pointer-events-none z-0"
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
             <path
               fill="#d97706"
               d="M100,20 C115,5 135,10 140,30 C158,25 170,40 160,55 C178,60 180,78 165,85 C175,100 168,118 152,118 C155,138 140,150 125,142 C120,160 103,165 95,150 C80,162 63,155 62,138 C45,145 30,132 35,115 C18,108 15,90 30,82 C18,68 22,50 38,47 C30,30 45,18 60,25 C68,8 88,8 100,20Z"
@@ -21,11 +22,11 @@ const Hero: React.FC = () => {
 
           {/* RIGHT SPLAT — behind photo */}
           <svg
-            className="absolute top-0 right-0 w-[50%] h-full opacity-20 pointer-events-none z-0"
-            viewBox="0 0 200 200"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ transform: 'scaleX(-1)' }}
-          >
+  className="absolute top-[45%] right-[-10%] w-[80%] h-[55%] md:top-0 md:right-0 md:w-[50%] md:h-full opacity-20 pointer-events-none z-0"
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+  style={{ transform: 'scaleX(-1)' }}
+>
             <path
               fill="#d97706"
               d="M100,20 C115,5 135,10 140,30 C158,25 170,40 160,55 C178,60 180,78 165,85 C175,100 168,118 152,118 C155,138 140,150 125,142 C120,160 103,165 95,150 C80,162 63,155 62,138 C45,145 30,132 35,115 C18,108 15,90 30,82 C18,68 22,50 38,47 C30,30 45,18 60,25 C68,8 88,8 100,20Z"
