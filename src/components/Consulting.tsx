@@ -6,6 +6,7 @@ interface ConsultingData {
   title: string;
   image: string;
   oneLiner?: string;
+  example: string; // Example service 
   bookingLink: string; // Always include booking link
 }
 
@@ -36,6 +37,15 @@ const ConsultingCard: React.FC<{ site: ConsultingData }> = ({ site }) => {
         >
           Book Now
         </button>
+        <button
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent card click from firing twice
+            window.open(site.example, "_blank", "noopener,noreferrer");
+          }}
+          className="mt-2 bg-amber-300 text-white px-4 py-2 rounded-full font-medium hover:bg-amber-700 transition-colors"
+        >
+          Example
+        </button>
       </div>
     </div>
   );
@@ -47,32 +57,36 @@ const Consulting: React.FC = () => {
   const consultingServices: ConsultingData[] = [
     {
       title: "Digital Strategy & Planning",
-      image: "/images/openart-image_hTDGHX7q_1761613601527_raw.jpg",
+      image: "/images/digitalPlanning.png",
       oneLiner: "Tailored strategies to grow your business online.",
+      example: "https://thestridesociety.netlify.app",
       bookingLink: "https://calendly.com/mahoganyandmango-dcp9/30min",
-    },
+      },
     {
-      title: "Website & App Optimization",
-      image: "/images/openart-image_HPIhQEHv_1761613561954_raw.jpg",
+      title: "Website Optimization",
+      image: "/images/websitesOptimization.png",
       oneLiner: "Improve UX, conversions, and performance.",
+      example: "https://phenomenalshe.netlify.app",
       bookingLink: "https://calendly.com/mahoganyandmango-dcp9/30min",
     },
     {
-      title: "Branding & UX Consulting",
-      image: "/images/openart-image_hITP1vKI_1761637781056_raw.jpg",
-      oneLiner: "Premium branding and user experience advice.",
+      title: "UX Consulting",
+      image: "/images/uxConsulting.png",
+      oneLiner: "Premium user experience execution.",
+      example: "https://pitcrew.denkyemcoop.com/",
       bookingLink: "https://calendly.com/mahoganyandmango-dcp9/30min",
     },
     {
       title: "Custom Digital Solutions",
-      image: "/images/openart-image_vcJp0Qqa_1761637838472_raw.jpg",
+      image: "/images/customDigitalSolutions.png",
       oneLiner: "Bespoke technology solutions that drive measurable growth.",
+      example: "https://portfolio.denkyemcoop.com/",
       bookingLink: "https://calendly.com/mahoganyandmango-dcp9/30min",
     },
   ];
 
   return (
-    <section id="consulting" className="py-16 md:py-24 bg-white">
+    <section id="consulting" className="py-16 md:py-24 bg-[#F5EFE6]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

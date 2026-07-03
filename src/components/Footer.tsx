@@ -1,9 +1,45 @@
-import React from 'react';
-import { Heart, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Heart, Instagram, Linkedin } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [pendingSection, setPendingSection] = useState<string | null>(null);
+
+  // Footer persists across navigation (it's outside <Routes> in App.tsx),
+  // so once we arrive on "/" with a pending target, scroll to it.
+  useEffect(() => {
+    if (location.pathname === '/' && pendingSection) {
+      const target = pendingSection;
+      setPendingSection(null);
+
+      const timeout = setTimeout(() => {
+        if (target === 'home') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          document.getElementById(target)?.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [location.pathname, pendingSection]);
+
+  const handleNavClick = (item: string) => {
+    const id = item.toLowerCase();
+
+    if (location.pathname === '/') {
+      if (id === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      setPendingSection(id);
+      navigate('/');
+    }
+  };
 
   return (
     <footer className="bg-amber-950 text-amber-100 py-12">
@@ -15,9 +51,9 @@ const Footer: React.FC = () => {
               className="flex items-center mb-4 cursor-pointer"
               onClick={() => {
                 if (window.location.pathname !== '/') {
-                  navigate('/'); // go home if not already on homepage
+                  navigate('/');
                 } else {
-                  window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll to top if already home
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
               }}
             >
@@ -45,11 +81,11 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-bold text-white mb-4">Services</h3>
             <ul className="space-y-2">
-              {['Web Design', 'eCommerce', 'Branding', 'SEO', 'Maintenance'].map((item) => (
+              {['Web Design', 'eCommerce', 'SEO', 'Maintenance'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-amber-300 hover:text-white transition-colors duration-300">
+                  <span className="text-amber-300">
                     {item}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -60,12 +96,12 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               {['Home', 'About', 'Packages', 'Process', 'Testimonials', 'Contact'].map((item) => (
                 <li key={item}>
-                  <a 
-                    href={`#${item.toLowerCase()}`} 
-                    className="text-amber-300 hover:text-white transition-colors duration-300"
+                  <button
+                    onClick={() => handleNavClick(item)}
+                    className="text-amber-300 hover:text-white transition-colors duration-300 text-left"
                   >
                     {item}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -81,4 +117,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-    
