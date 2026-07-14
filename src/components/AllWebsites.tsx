@@ -53,21 +53,131 @@ const AllWebsites: React.FC = () => {
   const navigate = useNavigate();
 
   const allSites: WebsiteData[] = [
-    { name: "InnerSpace", image: "/images/innerSpace.png", link: "https://theinnerspace.netlify.app", oneLiner: "Meditation and mindfulness tools for inner peace." },
-    { name: "Savory", image: "/images/savory.png", link: "https://thesavory.netlify.app", oneLiner: "Fine dining for food lovers." },
-    { name: "Lumina", image: "/images/lumina.png", link: "https://thelumina.netlify.app", oneLiner: "Beauty for all." },
-    { name: "Aperture", image: "/images/aperture.png", link: "https://theaperture.netlify.app", oneLiner: "A portfolio for photography and visuals." },
-    { name: "EduCoach", image: "/images/eduCoach.png", link: "https://theeducoach.netlify.app", oneLiner: "Online education platform for lifelong learners." },
-    { name: "BrightHope", image: "/images/brightHope.png", link: "https://thebrighthope.netlify.app", oneLiner: "Bringing hope through nonprofit design." },
-    { name: "The Stride Society", image: "/images/thestridesociety.png", link: "https://thestridesociety.netlify.app", oneLiner: "Community that moves forward together." },
-    { name: "Bubblegum Bytes", image: "/images/bubblegum-bytes.png", link: "https://bubblegum-bytes.netlify.app", oneLiner: "Digital diary." },
-    { name: "Foreign Freedom", image: "/images/foreignfreedom.png", link: "https://foreignfreedom.com", oneLiner: "Life coaching and motivational speaking." },
-    { name: "The Walk Club", image: "/images/thewalkclb.png", link: "https://thewalkclb.com", oneLiner: "Walk club for locals." },
-    { name: "The Lamb Lounge", image: "/images/thelamblounge.png", link: "https://lamblounge.netlify.app", oneLiner: "A cozy lounge for faith and fellowship." },
-    { name: "The Code Learn", image: "/images/thecodelearn.png", link: "https://thecodelearn.netlify.app", oneLiner: "Learn to code the fun and easy way." },
-    { name: "The Smart Start Studio", image: "/images/smartstartstudio.png", link: "https://smartstartstudio.netlify.app", oneLiner: "Smart Start Studio makes web surfing fun, enjoyable, and safe for all."},
-    { name: "PhenomenalShe", image: "/images/phenomenalshe.png", link: "https://phenomenalshe.netlify.app", oneLiner: "PhenomenalShe is a community-based nonprofit organization focused on empowering young women of color through mentorship, education, and personal development."},
-    { name: "The Botanica", image: "/images/botanica.png", link: "https://thebotanica.netlify.app", oneLiner: "Elegant plant palace that boasts a collection of premium plants and expert care guides to transform your space into a thriving botanical sanctuary."},  
+      { 
+        name: "Aperture", 
+        image: "/images/aperture.png", 
+        link: "https://theaperture.netlify.app", 
+        oneLiner: "A portfolio for photography and visuals." 
+      },
+    
+      { 
+        name: "BrightHope", 
+        image: "/images/brightHope.png", 
+        link: "https://thebrighthope.netlify.app", 
+        oneLiner: "Bringing hope through nonprofit design." 
+      },
+    
+      { 
+        name: "Bubblegum Bytes", 
+        image: "/images/bubblegum-bytes.png", 
+        link: "https://bubblegum-bytes.netlify.app", 
+        oneLiner: "Digital diary." 
+      },
+    
+      { 
+        name: "Denkyem Portfolio", 
+        image: "/images/DenkyemDenizens.png", 
+        link: "https://portfolio.denkyemcoop.com/", 
+        oneLiner: "A custom portfolio experience showcasing innovative digital solutions, thoughtful design, and modern development capabilities." 
+      },
+    
+      { 
+        name: "EduCoach", 
+        image: "/images/eduCoach.png", 
+        link: "https://theeducoach.netlify.app", 
+        oneLiner: "Online education platform for lifelong learners." 
+      },
+    
+      { 
+        name: "Foreign Freedom", 
+        image: "/images/foreignfreedom.png", 
+        link: "https://foreignfreedom.com", 
+        oneLiner: "Life coaching and motivational speaking." 
+      },
+    
+      { 
+        name: "Hester Consulting", 
+        image: "/images/hester-consulting.png", 
+        link: "https://silly-pony-43e29d.netlify.app/", 
+        oneLiner: "A refined digital presence designed to elevate brand positioning, communicate expertise, and create a seamless client experience." 
+      },
+    
+      { 
+        name: "InnerSpace", 
+        image: "/images/innerSpace.png", 
+        link: "https://theinnerspace.netlify.app", 
+        oneLiner: "Meditation and mindfulness tools for inner peace." 
+      },
+    
+      { 
+        name: "Lumina", 
+        image: "/images/lumina.png", 
+        link: "https://thelumina.netlify.app", 
+        oneLiner: "Beauty for all." 
+      },
+    
+      { 
+        name: "PhenomenalShe", 
+        image: "/images/phenomenalshe.png", 
+        link: "https://phenomenalshe.netlify.app", 
+        oneLiner: "PhenomenalShe is a community-based nonprofit organization focused on empowering young women of color through mentorship, education, and personal development." 
+      },
+    
+      { 
+        name: "Pit Crew", 
+        image: "/images/pit-crew.png", 
+        link: "https://pitcrew.denkyemcoop.com/", 
+        oneLiner: "A user-focused digital experience built to improve usability, streamline navigation, and connect users with the information they need." 
+      },
+    
+      { 
+        name: "Savory", 
+        image: "/images/savory.png", 
+        link: "https://thesavory.netlify.app", 
+        oneLiner: "Fine dining for food lovers." 
+      },
+    
+      { 
+        name: "The Botanica", 
+        image: "/images/botanica.png", 
+        link: "https://thebotanica.netlify.app", 
+        oneLiner: "Elegant plant palace that boasts a collection of premium plants and expert care guides to transform your space into a thriving botanical sanctuary." 
+      },
+    
+      { 
+        name: "The Code Learn", 
+        image: "/images/thecodelearn.png", 
+        link: "https://thecodelearn.netlify.app", 
+        oneLiner: "Learn to code the fun and easy way." 
+      },
+    
+      { 
+        name: "The Lamb Lounge", 
+        image: "/images/thelamblounge.png", 
+        link: "https://lamblounge.netlify.app", 
+        oneLiner: "A cozy lounge for faith and fellowship." 
+      },
+    
+      { 
+        name: "The Smart Start Studio", 
+        image: "/images/smartstartstudio.png", 
+        link: "https://smartstartstudio.netlify.app", 
+        oneLiner: "Smart Start Studio makes web surfing fun, enjoyable, and safe for all." 
+      },
+    
+      { 
+        name: "The Stride Society", 
+        image: "/images/thestridesociety.png", 
+        link: "https://thestridesociety.netlify.app", 
+        oneLiner: "Community that moves forward together." 
+      },
+    
+      { 
+        name: "The Walk Club", 
+        image: "/images/thewalkclb.png", 
+        link: "https://thewalkclb.com", 
+        oneLiner: "Walk club for locals." 
+      },
   ];
 
   return (
