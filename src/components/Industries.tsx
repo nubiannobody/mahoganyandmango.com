@@ -52,6 +52,13 @@ const IndustryCard: React.FC<{ industry: IndustryData }> = ({ industry }) => {
           {industry.oneLiner && (
             <p className="text-sm text-amber-800">{industry.oneLiner}</p>
           )}
+
+<div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+      <span className="opacity-0 group-hover:opacity-100 bg-white text-amber-950 px-4 py-2 rounded-full transition">
+        View Live Website
+      </span>
+    </div>
+
         </div>
       )}
     </div>
@@ -60,11 +67,11 @@ const IndustryCard: React.FC<{ industry: IndustryData }> = ({ industry }) => {
 
 const Industries: React.FC = () => {
   const industries: IndustryData[] = [
-    { name: "BrightHope", image: "/images/brightHope.png", link: "https://thebrighthope.netlify.app", oneLiner: "Bringing hope through nonprofit design." },
+    { name: "But God", image: "/images/butGod.png", link: "https://butgod.netlify.app/", oneLiner: "Luxury Christian Streetwear, wear the testimony.", },
     { name: "Bubblegum Bytes", image: "/images/bubblegum-bytes.png", link: "https://bubblegum-bytes.netlify.app", oneLiner: "Digital diary." },
     { name: "Denkyem Denizens", image: "/images/DenkyemDenizens.png", link: "https://portfolio.denkyemcoop.com/", oneLiner: "A portfolio of our community with capital that moves with your business, not against it." },
     { name: "EduCoach", image: "/images/eduCoach.png", link: "https://theeducoach.netlify.app", oneLiner: "Online education platform for lifelong learners." },
-    { name: "Foreign Freedom", image: "/images/foreignfreedom.png", link: "https://foreignfreedom.com", oneLiner: "Life coaching and motivational speaking." },
+    { name: "HomegürlHaüse", image: "/images/homegurlhause.png", link: "https://homegurlhause.netlify.app/", oneLiner: "A Safe Space For The Girls 👸🏾👸🏿👸🏽👸🏼👸🏻 — Built For Ü." },
     { name: "The Stride Society", image: "/images/thestridesociety.png", link: "https://thestridesociety.netlify.app", oneLiner: "Community that moves forward together." },
   ];
 

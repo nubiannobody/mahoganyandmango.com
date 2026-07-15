@@ -43,6 +43,11 @@ const WebsiteCard: React.FC<{ site: WebsiteData }> = ({ site }) => {
           {site.oneLiner && (
             <p className="text-sm text-amber-800">{site.oneLiner}</p>
           )}
+           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+      <span className="opacity-0 group-hover:opacity-100 bg-white text-amber-950 px-4 py-2 rounded-full transition">
+        View Live Website
+      </span>
+    </div>
         </div>
       )}
     </div>
@@ -73,6 +78,14 @@ const AllWebsites: React.FC = () => {
         link: "https://bubblegum-bytes.netlify.app", 
         oneLiner: "Digital diary." 
       },
+
+      {
+        name: "But God",
+        image: "/images/butGod.png",
+        link: "https://butgod.netlify.app/",
+        oneLiner: "Luxury Christian Streetwear, wear the testimony.",
+
+      },
     
       { 
         name: "Denkyem Portfolio", 
@@ -100,6 +113,13 @@ const AllWebsites: React.FC = () => {
         image: "/images/hester-consulting.png", 
         link: "https://silly-pony-43e29d.netlify.app/", 
         oneLiner: "A refined digital presence designed to elevate brand positioning, communicate expertise, and create a seamless client experience." 
+      },
+
+      {
+        name: "HomegürlHaüse",
+        image: "/images/homegurlhause.png",
+        link: "https://homegurlhause.netlify.app/",
+        oneLiner: "A Safe Space For The Girls 👸🏾👸🏿👸🏽👸🏼👸🏻 — Built For Ü."
       },
     
       { 
@@ -142,6 +162,13 @@ const AllWebsites: React.FC = () => {
         image: "/images/botanica.png", 
         link: "https://thebotanica.netlify.app", 
         oneLiner: "Elegant plant palace that boasts a collection of premium plants and expert care guides to transform your space into a thriving botanical sanctuary." 
+      },
+
+      {
+        name: "The Well",
+        image: "images/thewell.png",
+        link: "https://thewishingwell.netlify.app/",
+        oneLiner: "A place where, whatever you're feeling today, God has words of comfort, strength, and hope just for you."
       },
     
       { 
