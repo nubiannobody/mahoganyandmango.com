@@ -163,13 +163,6 @@ const AllWebsites: React.FC = () => {
         link: "https://thebotanica.netlify.app", 
         oneLiner: "Elegant plant palace that boasts a collection of premium plants and expert care guides to transform your space into a thriving botanical sanctuary." 
       },
-
-      {
-        name: "The Well",
-        image: "images/thewell.png",
-        link: "https://thewishingwell.netlify.app/",
-        oneLiner: "A place where, whatever you're feeling today, God has words of comfort, strength, and hope just for you."
-      },
     
       { 
         name: "The Code Learn", 
@@ -204,6 +197,13 @@ const AllWebsites: React.FC = () => {
         image: "/images/thewalkclb.png", 
         link: "https://thewalkclb.com", 
         oneLiner: "Walk club for locals." 
+      },
+
+      {
+        name: "The Well",
+        image: "images/thewell.png",
+        link: "https://thewishingwell.netlify.app/",
+        oneLiner: "A place where, whatever you're feeling today, God has words of comfort, strength, and hope just for you."
       },
   ];
 

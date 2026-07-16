@@ -67,8 +67,8 @@ const IndustryCard: React.FC<{ industry: IndustryData }> = ({ industry }) => {
 
 const Industries: React.FC = () => {
   const industries: IndustryData[] = [
-    { name: "But God", image: "/images/butGod.png", link: "https://butgod.netlify.app/", oneLiner: "Luxury Christian Streetwear, wear the testimony.", },
     { name: "Bubblegum Bytes", image: "/images/bubblegum-bytes.png", link: "https://bubblegum-bytes.netlify.app", oneLiner: "Digital diary." },
+    { name: "But God", image: "/images/butGod.png", link: "https://butgod.netlify.app/", oneLiner: "Luxury Christian Streetwear, wear the testimony.", },
     { name: "Denkyem Denizens", image: "/images/DenkyemDenizens.png", link: "https://portfolio.denkyemcoop.com/", oneLiner: "A portfolio of our community with capital that moves with your business, not against it." },
     { name: "EduCoach", image: "/images/eduCoach.png", link: "https://theeducoach.netlify.app", oneLiner: "Online education platform for lifelong learners." },
     { name: "HomegürlHaüse", image: "/images/homegurlhause.png", link: "https://homegurlhause.netlify.app/", oneLiner: "A Safe Space For The Girls 👸🏾👸🏿👸🏽👸🏼👸🏻 — Built For Ü." },
